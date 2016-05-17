@@ -1,0 +1,47 @@
+﻿
+
+<!--一个上面发生多个事件-->
+<div id="three" onclick="show(this,'red')" onmouseover=show(this,'blue') onmouseout=show(this,'green') ondblclick=show(this,'gray')>
+	wwwwwwwww
+</div>
+<script>
+	function show(obj,coll){		
+			obj.style.backgroundColor=coll;
+	}	
+</script>
+
+<body  onunload="alert('bay')" oncontextmenu="return false" onbeforeunload="event.returnValue='你小心点！'">
+	
+	
+</body>
+
+<body>
+	<div id="one" onmouseover="run()" style="position:absolute;left:100px;top;30px;width:100px;height:20px;background:red;display:none"></div>
+	
+	<input id="two" onclick="fun()" type="submit" value="按钮"/>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		var one = document.getElementById('one');
+		function fun(){
+			$("#one").toggle();
+			//document.getElementById('one').style.display = 'block';
+		}
+		function run(){
+			one.style.background="black";
+		}
+		one.onmouseout=function(){
+			this.style.background="yellow";
+		}		
+		
+		one.onmousedown=function(){				
+				one.style.background='blue';
+		}
+		one.onmouseup=function(){
+				one.style.background='green';
+		}
+	
+	</script>
+	
+	
+</body>
+

@@ -1,0 +1,52 @@
+﻿<body>
+<a href="del.php" onClick="return confirm('确定要删除吗')">删除</a>
+<div id="one" style="position:absolute;left:0;top:30;width:100;height:100;background:red"></div>
+<script>
+	var one = document.getElementById('one');
+	var x=0;
+	var y=0;
+	var xs=10;
+	var ys=10;
+	
+	function liu(){
+		x+=xs;
+		y+=ys;
+		if(x>window.document.body.clientWidth-200 || x<0){//当x>屏幕宽度或者小于0时
+			xs=xs*(-1);
+		}
+		if(y>window.document.body.clientHeight-100 || y<0){//当y>屏幕宽度或者小于0时
+			ys=ys*(-1);
+		}
+		one.style.left=x;	
+		one.style.top=y;
+	}
+
+	onload=function fun(){
+		timeId=setInterval(liu,10);
+		one.onmouseover=function(){
+				clearInterval(timeId);			
+		}
+		one.onmouseout=function(){
+				timeId=setInterval(liu,10);//这里必须加timeId否则鼠标离开一次速度加快一次
+		}
+	} 
+	//改变页面颜色，setTimeout指的是只改变一次就不变了而setInterval是一直在变
+
+	function three(){
+		setTimeout(function(){
+			document.bgColor='red';
+		},3000);
+		setTimeout(function(){
+			document.bgColor='blue';
+		},6000);
+		setTimeout(function(){
+			document.bgColor='green';
+		},9000);
+		setTimeout(function(){
+			document.bgColor='white';
+		},12000);
+	}
+		setInterval(three,100);
+</script>
+</body>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" method="" >
+	患者姓名:<input type="text" name="username" value="张三" />
+		  <input type="submit" value="打印患者信息" onclick="fun()" />
+		  <input type="submit" value="打印患者病情" onclick="run()"/>
+</form>
+</body>
+</html>
+
+<script>
+	function fun(){
+		var printPerson = document.forms[0];
+		printPerson.action = "1.php";
+		printPerson.method = "post";
+		printPerson.submit();
+	}
+
+	function run(){
+		var a = document.forms[0];
+		a.action = "2.php";
+		a.method = "post";
+		a.submit();
+	}
+	
+	var a =  new Function('a','b','return a+b');
+	alert(a(3,4));
+</script>

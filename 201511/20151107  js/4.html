@@ -1,0 +1,21 @@
+<!--只适用于ie-->
+<div id="one">
+	aaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaa<br/>
+</div>
+<input type="button" onclick="copyc()" value="copy"/>
+<script>
+	
+	var one=document.getElementById("one");
+	function copyc(){
+		var content = one.innerText;
+		
+		window.clipboardData.setData("Text",content);
+	}
+</script>
+

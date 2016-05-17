@@ -1,0 +1,15 @@
+<body>
+	
+	<script>
+		var subwin=window.open("one.html","_blank","top=300,left=300,width=400,height=300");
+		function show(obj){
+			subwin.document.bgColor=obj.value;
+		}
+	</script>
+	
+<input type="button" onclick="show(this)" value="red"/>
+<input type="button" onclick="show(this)" value="green"/>
+<input type="button" onclick="show(this)" value="blue"/>
+
+
+</body>

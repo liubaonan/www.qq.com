@@ -1,0 +1,24 @@
+﻿
+	<form name="fom" method="post" onsubmit="return check()" action="1.html" >
+		用户名:<input type="text" name="username" value="" /><br/>
+		密码:<input type="password" name="password" value="" /><br/>
+		<input type="submit" value="登陆" />
+	</form>
+
+<script>
+	function check(){
+		if(document.fom.username.value==""){
+			alert("用户名不能为空");
+			//document.for.username.focus();
+			return false;
+		}
+		if(document.fom.password.value==""){
+			alert("密码不能为空");
+			//document.for.password.focus();
+			return false;
+		}
+		
+		return true;
+	}
+	
+</script>

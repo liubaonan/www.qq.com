@@ -1,0 +1,19 @@
+﻿
+<div onclick="show()">jjj</div>
+<p onclick="show()">ddddd</p>
+<h2 onclick="show()">gggg</h2>
+
+<!--键盘按下小写变大写-->
+<input type="text" onkeyup="if(this.value!=this.value.toUpperCase()) this.value=this.value.toUpperCase()"/>
+
+
+
+<script>
+	function show(){
+		alert(event.srcElement.nodeName);
+		event.srcElement.innerText="刘宝南";		
+	}
+	
+
+</script>
+

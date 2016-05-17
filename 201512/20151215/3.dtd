@@ -1,0 +1,15 @@
+<!ELEMENT 员工信息 (员工+)>
+<!ENTITY intro "这是一个介绍" >
+<!ATTLIST 员工
+		  编号  ID #REQUIRED 
+		  住址   CDATA #IMPLIED
+		大哥    IDREF #REQUIRED
+>
+<!ELEMENT 员工 (姓名,性别,职业,出生年月,介绍,(妻子|丈夫))>
+<!ELEMENT 姓名 (#PCDATA)>
+<!ELEMENT 性别 (#PCDATA)>
+<!ELEMENT 出生年月 (#PCDATA)>
+<!ELEMENT 介绍 (#PCDATA)>
+<!ELEMENT 职业 (#PCDATA)>
+<!ELEMENT 妻子 (姓名,性别,职业,出生年月)>
+<!ELEMENT 丈夫 (姓名,性别,职业,出生年月)>

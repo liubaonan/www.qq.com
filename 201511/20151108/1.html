@@ -1,0 +1,23 @@
+<div id="one">
+	aaaaaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaaaaa<br/>
+	aaaaaaaaaaaaaaaaaaaaa<br/>
+</div>
+
+<input type="button" onclick="copyc()" value="copy" />
+
+<script>
+	var one = document.getElementById("one");
+	function copyc(){
+		var content = one.innerText;	
+		window.clipboardData.setData("Text",content);
+	}
+	
+</script>
+

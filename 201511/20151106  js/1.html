@@ -1,0 +1,41 @@
+﻿<div onclick="show()">jjj</div>
+<p onclick="show()">ddddd</p>
+<h2 onclick="show()">gggg</h2>
+
+<!--键盘按下小写变大写-->
+<input type="text" onkeyup="if(this.value!=this.value.toUpperCase()) this.value=this.value.toUpperCase()"/>
+
+<div id="one" style="color:red;font-size:10cm;text-align:center">0</div>
+
+<input onclick="stop()" type="button" value="停止" />
+<input onclick="start()" type="button" value="开始" />
+
+
+
+<script>
+	function show(){
+		alert(event.srcElement.nodeName);
+		event.srcElement.innerText="刘宝南";		
+	}
+	
+	var one = document.getElementById('one');
+	var i=1;
+	var dt=setInterval(function(){
+					one.innerText=i;
+					i++;
+				},100);
+				
+	function stop(){
+		clearInterval(dt);
+	
+	}
+	
+	function start(){
+		dt=setInterval(function(){
+					one.innerText=i;
+					i++;
+				},100);
+	}
+
+</script>
+
