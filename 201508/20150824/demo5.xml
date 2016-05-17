@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TVSCHEDULE SYSTEM "demo5.dtd">
+<TVSCHEDULE NAME="">
+	<CHANNEL CHAN="">
+		<BANNER>BANNER</BANNER>
+		<DAY>
+			<DATE>DATE</DATE>
+			<HOLIDAY>HOLIDAY</HOLIDAY>
+		</DAY>
+	</CHANNEL>
+</TVSCHEDULE>
+

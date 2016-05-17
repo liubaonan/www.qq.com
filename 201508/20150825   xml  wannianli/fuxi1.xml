@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<school>
+	<student>
+		<name>刘宝南</name>
+		<age>22</age>
+	</student>
+	
+	<student>
+		<name>刘晓森</name>
+		<age>22</age>
+	</student>
+	
+	<student>
+		<name>周杰棍</name>
+		<age>33</age>
+	</student>
+</school>
+
+
+

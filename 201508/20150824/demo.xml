@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT  学号 (#PCDATA)>
+<!ELEMENT  姓名 (#PCDATA)>
+<!ELEMENT  性别 (#PCDATA)>
+<!ELEMENT  班级 (#PCDATA)>
+<!ELEMENT  爱好 (#PCDATA)>
+<!ELEMENT  学生 (学号?,姓名,性别,班级,爱好*)>
+<!ELEMENT  学生基本情况 (学生+)>

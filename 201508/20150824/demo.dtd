@@ -1,0 +1,8 @@
+<!ELEMENT 个人简历(姓名,性别,出生年月,(工作时间,起始时间,结束时间)*,联系方式*) (#PCDATA)>
+<!ELEMENT 姓名 (#PCDATA)>
+<!ELEMENT 性别 (#PCDATA)>
+<!ELEMENT 出生年月 (#PCDATA)>
+<!ELEMENT 起始时间 (#PCDATA)>
+<!ELEMENT 结束时间 (#PCDATA)>
+<!ELEMENT 工作时间 (#PCDATA)>
+<!ELEMENT 联系方式 (#PCDATA)>

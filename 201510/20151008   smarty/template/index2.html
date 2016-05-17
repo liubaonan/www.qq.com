@@ -1,0 +1,46 @@
+﻿<html>
+<body>
+我的第一个smarty
+<br/>
+<!--
+你只需要知道，我叫刘宝南
+-->
+{#foreach $arr as $a#}
+{#$a.0#}.{#$a.1#}
+<br/>
+{#/foreach#}
+
+{#foreach $arr as $a#}
+{#$a.0#}.{#$a.1#}
+<br/>
+{#/foreach#}
+
+{#$date#}
+<br/>
+{#$date2#}
+{#*这里是注释*#}
+<br/>
+{#$smarty.now#}
+<br/>
+{#$smarty.version#}
+<br/>
+<hr/>
+{#foreach $arr2 as $v#}
+{#$v['name']#}
+{#/foreach#}
+<hr/>
+{#$obj->one.name#}
+
+{#assign var=foo value=[1,2,3]#}
+显示{#$foo.1#}
+<br/>
+字符技术
+{#$title|count_characters#}
+<br/>
+{#$sen#}
+
+
+
+
+</body>
+</html>

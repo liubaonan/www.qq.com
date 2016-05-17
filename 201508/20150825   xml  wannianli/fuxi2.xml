@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school>
+	<student>
+		<name>刘宝南</name>
+		<age>22</age>
+	</student>
+	
+	<student>
+		
+		<age>22</age>
+	</student>
+	
+	<student>
+		<name>周杰棍</name>
+		<age>33</age>
+	</student>
+<student id="300"><name ing="333">呜哈哈</name><age>55</age></student><student id="222"><name>双节伦</name><age>33</age></student></school>
